@@ -1,0 +1,31 @@
+@startuml
+
+skinparam componentStyle uml2
+
+package "'Customers' Aggregate" <<Rectangle>> {
+	class Customer <<(A,#fffab8) Aggregate Root>> {
+		String firstname
+		String lastname
+		SocialInsuranceNumber sin
+		List<Address> addresses
+		AddressId createAddress(Address address)
+		boolean changeCustomer(String firstname, String lastname)
+	}
+	class Address <<(E,DarkSeaGreen) Entity>> {
+		String street
+		int postalCode
+		String city
+	}
+	class SocialInsuranceNumber <<(V,DarkSeaGreen) Value Object>> {
+		String sin
+	}
+}
+Customer --> SocialInsuranceNumber : sin
+Customer o-- Address : addresses
+Customer --> Address : createAddress
+legend left
+  This bounded context implements the subdomain 'CustomerManagementDomain'.
+end legend
+
+
+@enduml

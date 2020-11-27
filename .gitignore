@@ -14,9 +14,6 @@ bin
 .gradle
 build
 
-# Generated sources
-src-gen
-
 # Generated output
 out
 
