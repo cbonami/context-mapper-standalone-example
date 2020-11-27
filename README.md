@@ -1,11 +1,19 @@
 # Context Mapping DSL (CML) Standalone Example Project [![Build Status](https://travis-ci.com/ContextMapper/context-mapper-standalone-example.svg?branch=master)](https://travis-ci.com/ContextMapper/context-mapper-standalone-example) 
 
-![Insurance Example Model](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_ContextMap.puml)
+De volgende diagrams werden vanuit de CML (via PUML) gegenereerd:
 
-![Customer Mgmt Context](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_CustomerManagementContext.puml)
+![Insurance Business](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_ContextMap.puml)
 
-![Customers Aggregate](https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_RiskManagementContext.puml)
+![CustomerManagementDomain](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_CustomerManagementContext.puml)
 
-![Printing Aggregate](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_PrintingContext.puml)
+![PrintingDomain](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_PrintingContext.puml)
 
-![CustomerFrontendAggregate](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_CustomerSelfServiceContext.puml)
+![CustomerManagementDomain](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_CustomerSelfServiceContext.puml)
+
+![PolicyManagementDomain](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/cbonami/context-mapper-standalone-example/cbonami/gitpod-setup/src-gen/Insurance-Example-Model_BC_PolicyManagementContext.puml)
+
+Nadat je de CML hebt aangepast, kan je de diagrams hergenereren dmv:
+
+```bash
+./gradlew runWithExecJarExecutable
+```
